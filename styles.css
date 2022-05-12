@@ -39,3 +39,10 @@ body {
 .fa-quote-left {
   font-size: 3.5rem;
 }
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
