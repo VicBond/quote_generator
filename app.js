@@ -16,7 +16,12 @@ function newQuote() {
   } else {
     authorText.textContent = quote.author;
   }
-  
+  //Check quote length to determine the styling
+  if(quote.text.length > 120){
+    quoteText.classList.add('long-quote');
+  } else {
+    quoteText.classList.remove('long-quote');
+  }
   quoteText.textContent = quote.text;
 }
 
