@@ -10,7 +10,13 @@ let apiQuotes = [];
 //new quote
 function newQuote() {
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-  authorText.textContent = quote.author;
+  //check if author field is empty
+  if(!quote.author){
+    authorText.textContent = 'Unknown';
+  } else {
+    authorText.textContent = quote.author;
+  }
+  
   quoteText.textContent = quote.text;
 }
 
